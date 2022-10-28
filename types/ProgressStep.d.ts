@@ -1,18 +1,14 @@
-import * as React from "react";
+import { Component } from "react";
+
 
 export default ProgressStep;
-declare class ProgressStep  {
+declare class ProgressStep  extends Component{
     onNextStep: () => Promise<void>;
     onPreviousStep: () => void;
     onSubmit: () => void;
     renderNextButton: () => any;
     renderPreviousButton: () => any;
     render(): any;
-    context: any;
-    setState: any;
-    forceUpdate: any;
-    props: typeof ProgressStep.propTypes;
-    refs: any;
 }
 declare namespace ProgressStep {
     namespace propTypes {
