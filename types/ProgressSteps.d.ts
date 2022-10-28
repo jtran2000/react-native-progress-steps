@@ -1,5 +1,7 @@
+import { Component } from "react";
+
 export default ProgressSteps;
-declare class ProgressSteps {
+declare class ProgressSteps extends Component{
   state: {
     stepCount: number;
     activeStep: any;
@@ -10,11 +12,7 @@ declare class ProgressSteps {
   renderStepIcons: () => any[];
   setActiveStep: (step: any) => void;
   render(): any;
-  context: any;
-  setState: any;
-  forceUpdate: any;
-  props: typeof ProgressSteps.propTypes;
-  refs: any;
+
 }
 declare namespace ProgressSteps {
     namespace propTypes {
