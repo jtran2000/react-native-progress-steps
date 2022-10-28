@@ -1,15 +1,20 @@
 export default ProgressSteps;
 declare class ProgressSteps {
-    state: {
-        stepCount: number;
-        activeStep: any;
-    };
-    componentDidMount(): void;
-    componentDidUpdate(prevProps: any): void;
-    getChildProps(): any;
-    renderStepIcons: () => any[];
-    setActiveStep: (step: any) => void;
-    render(): any;
+  state: {
+    stepCount: number;
+    activeStep: any;
+  };
+  componentDidMount(): void;
+  componentDidUpdate(prevProps: any): void;
+  getChildProps(): any;
+  renderStepIcons: () => any[];
+  setActiveStep: (step: any) => void;
+  render(): any;
+  context: any;
+  setState: any;
+  forceUpdate: any;
+  props: typeof ProgressSteps.propTypes;
+  refs: any;
 }
 declare namespace ProgressSteps {
     namespace propTypes {
